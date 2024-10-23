@@ -27,7 +27,7 @@ export class SaveFile implements SaveFileUseCase {
             fs.writeFileSync(`${fileDestination}/${fileName}.tsx`, fileContent)
             return true;
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             return false;
         }
         
